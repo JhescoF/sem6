@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo general del body */
+body {
+  background: #f4f6f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Contenedor del formulario */
+form {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #2c3e50;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+form br {
+  display: none; /* Quitamos los <br> del diseño */
+}
+
+/* Botón */
+button {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+/* Contenedor de cursos */
+.cursos-container {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+  max-height: 200px; /* Evita que crezca demasiado */
+  overflow-y: auto;  /* Scroll si hay muchos cursos */
+}
+
+/* Título de cursos */
+.cursos-container legend {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Lista de checkboxes */
+.curso-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.curso-item:hover {
+  background: #eaf2fb;
+}
+
+/* Estilo de los checkboxes */
+.curso-item input[type="checkbox"] {
+  accent-color: #3498db; /* Estilo moderno */
+  transform: scale(1.2);
+  margin-right: 10px;
+}
+
+.curso-item label {
+  cursor: pointer;
+  color: #444;
+  font-size: 14px;
+}
